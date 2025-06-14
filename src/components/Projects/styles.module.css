@@ -2,54 +2,71 @@
     display: flex;
     flex-direction: column;
     margin-top: 25vh;
+    margin-bottom: -30vh;
     color: white;
     padding: 10%;
 }
 
-.projectDescription {
+.viewPoll {
     display: flex;
-    height: 700px;
-    gap: 5%;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.imageContainer {
-    position: relative;
-    height: 100%;
-    width: 40%
-}
-.imageContainer img {
-    object-fit: cover;
-}
-.column {
-    width: 20%;
-    display: flex;
-    font-size: 1.5vw;
-}
-.column:last-of-type {
-    font-size: 1vw;
+    flex-wrap: wrap;
     align-items: flex-end;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s;
+    margin: 4rem 0;
+    width: 100%;
+    background-color: #0e0e0e;
+    border-radius: 8px
 }
-.projectList {
-    margin-top: 200px;
-    display: flex;
-    flex-direction: column;
-}
-.projectEl {
-    display: flex;
-    justify-content: flex-end;
-    border-top: 1px solid white;
-    font-size: 4vw;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: default;
-}
-.projectEl:last-of-type {
-    border-bottom: 1px solid white;
-}
-.projectEl p {
-    margin-top:40px;
-    margin-bottom:20px
 
+.even {
+    transform: translateX(100%);
+}
+
+.even .picture {
+    order: -1;
+}
+
+.inView {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+}
+
+.caption {
+    flex: 1;
+    min-width: 300px;
+    padding: 2em;
+}
+
+.caption h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+}
+
+.caption h2 {
+    font-size: 1.5rem;
+    color: #aaa;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+}
+
+.caption p {
+    font-size: 1.1rem;
+    color: rgb(228, 221, 213);
+    line-height: 1.6;
+    font-family: 'Viaoda Libre', sans-serif;
+}
+
+.picture img {
+    width: 350px;
+    height: 500px;
+    display: block;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    /* padding: 12px; */
+    border-radius: 8px
 }
