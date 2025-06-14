@@ -1,10 +1,10 @@
 ## Getting Started
 
-#First, run in terminal:
+First, run in terminal:
 
     npm install locomotive-scroll
 
-#Then run the development server:
+Then run the development server:
 
     npm run dev
 
