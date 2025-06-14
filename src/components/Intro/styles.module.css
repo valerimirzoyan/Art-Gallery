@@ -53,8 +53,6 @@
       stroke-dashoffset: 5;
     }
   }
-  
-
 
 .backgroundImage {
     position: absolute;
@@ -72,11 +70,16 @@
     justify-content: center;
 }
 
+@import url('https://fonts.google.com/specimen/Montserrat?lang=en_Latn&categoryFilters=Sans+Serif:%2FSans%2FGeometric');
+
 .introContainer h1 {
     z-index: 1;
     color: white;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 6vw;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .introImage {

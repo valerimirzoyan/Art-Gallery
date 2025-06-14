@@ -34,7 +34,7 @@ const Intro = () => {
         const timer = setTimeout(() => {
             setIsLoading(false);
             document.body.style.overflow = "";
-        }, );
+        }, 3500);
     
         return () => {
             clearTimeout(timer);
@@ -89,7 +89,7 @@ const Intro = () => {
                         alt="foreground parallax image"
                     />
                 </div>
-                <h1 data-scroll data-scroll-speed="0.4" >Animated Gallery</h1>
+                <h1 data-scroll data-scroll-speed="0.4" >ANIMATED GALLERY</h1>
             </div>
         </div>
     );
