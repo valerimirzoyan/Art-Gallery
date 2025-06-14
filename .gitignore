@@ -12,6 +12,9 @@
 
 .Identifier
 
+#IDE sttings
+.idea
+.vscode
 
 # testing
 /coverage
@@ -22,6 +25,7 @@
 
 # production
 /build
+/build/
 
 # misc
 .DS_Store
